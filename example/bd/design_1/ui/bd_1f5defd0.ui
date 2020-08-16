@@ -1,0 +1,30 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port ddr3_sdram -pg 1 -lvl 5 -x 1240 -y 60 -defaultsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port init_calib_complete_0 -pg 1 -lvl 5 -x 1240 -y 160 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 2 -x 390 -y 110 -defaultsOSRD
+preplace inst axi_vip_0 -pg 1 -lvl 1 -x 130 -y 200 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1070 -y -120 -defaultsOSRD
+preplace inst rst_mig_7series_0_200M -pg 1 -lvl 3 -x 730 -y -110 -defaultsOSRD
+preplace netloc mig_7series_0_ui_clk 1 0 4 30 270 NJ 270 540 10 910
+preplace netloc mig_7series_0_mmcm_locked 1 2 1 550 -70n
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 1 530 -130n
+preplace netloc rst_mig_7series_0_200M_peripheral_aresetn 1 0 4 20 130 240 -10 NJ -10 920
+preplace netloc reset_1 1 0 2 NJ 120 NJ
+preplace netloc mig_7series_0_init_calib_complete 1 2 3 NJ 160 NJ 160 NJ
+preplace netloc mig_7series_0_DDR3 1 2 3 NJ 60 N 60 N
+preplace netloc sys_diff_clock_1 1 0 2 NJ 100 N
+preplace netloc axi_vip_0_M_AXI 1 1 3 230J -210 NJ -210 910
+preplace netloc axi_mem_intercon_M00_AXI 1 1 4 250 0 NJ 0 NJ 0 1220
+levelinfo -pg 1 0 130 390 730 1070 1240
+pagesize -pg 1 -db -bbox -sgen -150 -240 1450 360
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1"
+}
