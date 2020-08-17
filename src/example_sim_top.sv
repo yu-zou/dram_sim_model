@@ -1,9 +1,13 @@
-`timescale 1ns/1ps
+`timescale 1ps/100fs
 
 import axi_vip_pkg::*;
 import design_1_axi_vip_0_0_pkg::*;//This name should be the same as the name written down
 
 module example_sim_top ();
+
+// Important: don't remove this line, even though it's not passed to any sub module
+// Vivado will automatically detect this parameter
+parameter SIM_BYPASS_INIT_CAL = "FAST";
 
 // ID value for WRITE/READ_BURST transaction
 xil_axi_uint mtestID;
@@ -108,8 +112,10 @@ wire init_calib_complete;
 
 reg reset = 1;
 
+localparam CLKIN_PERIOD = 5000;
+
 reg clk = 1;
-always #5ns clk = ~clk;
+always #(CLKIN_PERIOD/2.0) clk = ~clk;
 wire sys_diff_clock_clk_n = ~clk;
 wire sys_diff_clock_clk_p = clk;
 
