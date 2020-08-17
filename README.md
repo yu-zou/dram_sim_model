@@ -7,3 +7,4 @@ The wrapper logic is based on DDR3 simulation example design generated for KC705
 cd script
 vivado -nolog -nojournal -mode tcl -source project_1.tcl
 ```
+Then run the simulation, a example testbench is already included in the example project.
