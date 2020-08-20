@@ -1,0 +1,25 @@
+SET_FLAG MODE BATCH
+SET_FLAG STANDALONE_MODE TRUE
+SET_PREFERENCE ipi_mode yes
+SET_PREFERENCE is_ip_locked false
+SET_PREFERENCE devicefamily kintex7
+SET_PREFERENCE device xc7k325t
+SET_PREFERENCE speedgrade -2
+SET_PREFERENCE package ffg900
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE outputdirectory c:/dram_sim_model/example/bd/design_1/ip/design_1_mig_7series_0_1/_tmp/
+SET_PREFERENCE subworkingdirectory c:/dram_sim_model/example/bd/design_1/ip/design_1_mig_7series_0_1/_tmp/
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE tool vivado
+SET_PARAMETER component_name design_1_mig_7series_0_1
+SET_PREFERENCE compnamestatus 1
+SET_PARAMETER component_name design_1_mig_7series_0_1
+SET_PARAMETER xml_input_file C:/dram_sim_model/example/bd/design_1/ip/design_1_mig_7series_0_1/board.prj
+SET_PARAMETER data_dir_path c:/Xilinx/Vivado/2019.1/data/ip/xilinx/mig_7series_v4_2
+SET_CORE_NAME Memory Interface Generator (MIG 7 Series)
+SET_CORE_VERSION 4.2
+SET_CORE_VLNV xilinx.com:ip:mig_7series:4.2
+SET_CORE_PATH c:/Xilinx/Vivado/2019.1/data/ip/xilinx/mig_7series_v4_2
+SET_CORE_DATASHEET c:/Xilinx/Vivado/2019.1/data/ip/xilinx/mig_7series_v4_2/data/docs/ds176_7series_MIS.pdf

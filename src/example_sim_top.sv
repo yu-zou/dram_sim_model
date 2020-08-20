@@ -112,7 +112,7 @@ wire init_calib_complete;
 
 reg reset = 1;
 
-localparam CLKIN_PERIOD = 5000;
+localparam CLKIN_PERIOD = 5000;//5000ps = 200MHz
 
 reg clk = 1;
 always #(CLKIN_PERIOD/2.0) clk = ~clk;
